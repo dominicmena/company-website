@@ -13,25 +13,25 @@ app.get('/homepage', (request,response) => {
     response.render("home-page.ejs")
 })
 
-// app.get('/company-history.ejs', (request,response) => {
-//     response.render("Company History")
-// })
+app.get('/companyhistory', (request,response) => {
+    response.render("company-history.ejs")
+})
 
-// app.get('/staff-page.ejs', (request,response) => {
-//     response.render("Staff Page")
-// })
+app.get('/staffpage', (request,response) => {
+    response.render("staff-page.ejs")
+})
 
-// app.get('/past-work.ejs', (request,response) => {
-//     response.render("Past Work")
-// })
+app.get('/pastwork', (request,response) => {
+    response.render("past-work.ejs")
+})
 
-// app.get('/contact-page.ejs', (request,response) => {
-//     response.render("Contact Page")
-// })
+app.get('/contactpage', (request,response) => {
+    response.render("contact-page.ejs")
+})
 
-// app.get('/links-page.ejs', (request,response) => {
-//     response.render("Links page")
-// })
+app.get('/linkspage', (request,response) => {
+    response.render("links-page.ejs")
+})
 
 
 app.listen(PORT,()=>{
