@@ -1,10 +1,10 @@
 const pastWork = [
     {
-        company: "tesla",
-        position: "muskateer"
+        project: "Build Cafeteria",
+        location: "California"
     },
     {
-        company: "disneyland",
-        position: "mouseketeer"
+        project: "Make a Sandwich",
+        location: "Home"
     }
 ]
