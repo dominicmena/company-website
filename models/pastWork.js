@@ -5,6 +5,6 @@ const pastWork = [
     },
     {
         project: "Make a Sandwich",
-        location: "Home"
+        location: "home"
     }
 ]
