@@ -9,4 +9,5 @@ const staffPage = [
     }
 ]
 
+module.exports = staffPage
 

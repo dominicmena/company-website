@@ -8,3 +8,5 @@ const pastWork = [
         location: "home"
     }
 ]
+
+module.exports = pastWork

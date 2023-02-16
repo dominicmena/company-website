@@ -8,3 +8,5 @@ const links = [
         site: "https://disneyland.disney.go.com/"
     }
 ]
+
+module.exports = links
