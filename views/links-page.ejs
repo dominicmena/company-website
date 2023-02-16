@@ -4,10 +4,17 @@
     <header><%- include('./partials/navbar.ejs') %></header>
     <body>
     <ul>
+        <% let page = 1 %>
         <% for(let i = 0; i<links.length; i++){%>
-            <li><%=links[i].name  %></li>
-            <li><%=links[i].site  %></li>
-       <% } %>
+            <li> Page Link <%= page%></li>
+            <ul>
+
+                <li>Page: <%=links[i].name  %></li>
+                <li>Links: <%=links[i].site  %></li><br>
+            </ul>
+       <% 
+        page++
+    } %>
 
     
     </ul>

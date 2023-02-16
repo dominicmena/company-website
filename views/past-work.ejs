@@ -4,10 +4,17 @@
     <header><%- include('./partials/navbar.ejs') %></header>
     <body>
         <ul>
+            <% let pastwork = 1%>
             <% for(let i = 0; i<pastWork.length; i++){%>
-                <li><%=pastWork[i].project  %></li>
-                <li><%=pastWork[i].location  %></li>
-           <% } %>
+                <li>Past Work <%=pastwork%></li>
+                <ul>
+
+                    <li>Project: <%=pastWork[i].project  %></li>
+                    <li>Location:<%=pastWork[i].location  %></li><br>
+                </ul>
+           <%
+        pastwork++
+        } %>
     
         
         </ul>

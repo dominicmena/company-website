@@ -4,9 +4,15 @@
     <header><%- include('./partials/navbar.ejs') %></header>
     <body>
         <ul>
+            <% let staffNum = 1 %>
             <% for(let i = 0; i<staff.length; i++){%>
-                <li><%=staff[i].firstName  %></li>
-                <li><%=staff[i].lastName  %></li>
+                <li>Staff <%= staffNum%> 
+            <%staffNum+=1 %>
+            </li>
+                <ul>
+                    <li> First Name: <%=staff[i].firstName  %></li>
+                    <li> Last Name: <%=staff[i].lastName  %></li><br>
+                </ul>
            <% } %>
     
         
