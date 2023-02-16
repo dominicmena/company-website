@@ -3,6 +3,10 @@ const express = require('express')
 const app = express()
 const PORT = 3000;
 
+const links = require('./models/linksPage')
+const staffs = require('./models/staffPage')
+const pastWorks = require('./models/pastWork')
+
 app.use(express.static("public"));
 
 app.get('/', (request, response) => {
@@ -18,11 +22,15 @@ app.get('/companyhistory', (request,response) => {
 })
 
 app.get('/staffpage', (request,response) => {
-    response.render("staff-page.ejs")
+    response.render("staff-page.ejs",{
+        staff : staffs
+    })
 })
 
 app.get('/pastwork', (request,response) => {
-    response.render("past-work.ejs")
+    response.render("past-work.ejs",{
+    pastWork: pastWorks
+    })
 })
 
 app.get('/contactpage', (request,response) => {
@@ -30,7 +38,9 @@ app.get('/contactpage', (request,response) => {
 })
 
 app.get('/linkspage', (request,response) => {
-    response.render("links-page.ejs")
+    response.render("links-page.ejs",{
+        links: links
+    })
 })
 
 app.listen(PORT,()=>{

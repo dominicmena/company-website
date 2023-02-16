@@ -2,6 +2,16 @@
 <html>
 
     <header><%- include('./partials/navbar.ejs') %></header>
-    <body></body>
+    <body>
+        <ul>
+            <% for(let i = 0; i<pastWork.length; i++){%>
+                <li><%=pastWork[i].project  %></li>
+                <li><%=pastWork[i].location  %></li>
+           <% } %>
+    
+        
+        </ul>
+
+    </body>
     
     </html>

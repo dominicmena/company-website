@@ -3,7 +3,15 @@
 
     <header><%- include('./partials/navbar.ejs') %></header>
     <body>
+        <ul>
+            <% for(let i = 0; i<staff.length; i++){%>
+                <li><%=staff[i].firstName  %></li>
+                <li><%=staff[i].lastName  %></li>
+           <% } %>
+    
         
+        </ul>
+    
     </body>
     
     </html>
